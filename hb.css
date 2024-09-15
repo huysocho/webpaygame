@@ -1,0 +1,226 @@
+
+.navbar-brand img {
+    width: 110px; /* Điều chỉnh kích thước chiều rộng */
+    height: auto; /* Đảm bảo giữ tỷ lệ khung hình */
+}
+
+.navbar-nav .nav-item {
+    margin: 0px;
+    padding-left: 15px; /* Nếu muốn loại bỏ padding mặc định */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+    backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+    -webkit-backdrop-filter: blur(10px); /* Làm mờ nền cho trình duyệt hỗ trợ WebKit */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo navbar luôn nằm trên cùng */
+  }
+.navbar {
+    margin-bottom: 0;
+}
+  
+.navbar .nav-link, 
+.navbar .dropdown-toggle, 
+.navbar .btn, 
+.navbar .form-control, 
+.navbar .navbar-toggler-icon {
+    color: white !important; /* Giữ cho chữ màu trắng và không bị mờ */
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Đảm bảo text màu trắng để dễ đọc */
+}
+
+nav .container {
+    max-width: 1200px; /* Điều chỉnh giá trị này theo mong muốn */
+    margin: 0 auto; /* Giữ container ở giữa */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item .dropdown-menu {
+    margin-top: 25px; /* Thay đổi giá trị 10px theo ý muốn */
+}
+
+.content-wrap {
+    max-width: 1265px; /* Điều chỉnh giá trị này theo mong muốn */
+    margin: 0 auto; /* Giữ container ở giữa */
+}
+
+.appvue {
+    margin: 0 auto; /* Giữ container ở giữa */
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+}
+
+.content-wrap {
+    margin-top: -75px; /* Điều chỉnh giá trị âm để kéo nội dung lên phía trên */
+    padding-top: 0;
+    padding: .1px;
+    overflow: hidden;
+    background: #0a0a0a
+}
+
+.isotope {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Xóa bullet của ul */
+}
+
+.pagination li .btn-readmore {
+    font-size: 12px; /* Giảm kích thước chữ của nút "Xem Thêm" */
+    padding: 3px 5px;
+    display: none; /* Ẩn nút "Xem Thêm" mặc định */
+}
+
+.pagination li:hover .btn-readmore {
+    display: inline-block; /* Hiển thị khi người dùng hover vào mục */
+}
+
+.pagination li span {
+    padding: 0px;
+    margin: 10;
+}
+
+.container.store {
+    max-width: 1250px; /* Điều chỉnh độ rộng của container */
+    padding: 20px;
+    margin: 25px;
+}
+
+/* Tùy chỉnh collapse của navbar */
+.navbar-collapse .navbar-nav {
+    margin: 0; /* Xóa margin của navbar-nav */
+}
+
+.navbar-collapse .nav-item {
+    padding: 1rem; /* Thêm khoảng cách giữa các mục */
+}
+
+.navbar-collapse .nav-link {
+    color: #fff; /* Màu chữ trắng */
+    padding: 0.5rem 1rem; /* Thêm padding cho các link */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi cho nền khi hover */
+}
+
+.navbar-collapse .nav-link:hover {
+    background-color: #c9572a; /* Màu nền khi hover */
+    color: #fff; /* Đổi màu chữ khi hover */
+}
+
+.navbar-collapse .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+    backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+    -webkit-backdrop-filter: blur(10px); /* Làm mờ nền cho trình duyệt hỗ trợ WebKit */
+    transition: margin 0.3s cubic-bezier(0.03, 0.92, 0.44, 1.07); /* Hiệu ứng chuyển đổi */
+}
+
+.navbar-collapse .dropdown-item {
+    color: #fff; /* Màu chữ trắng cho dropdown item */
+    padding: 0.5rem 1rem; /* Thêm padding cho dropdown item */
+}
+
+.navbar-collapse .nav-item .dropdown-toggle {
+    margin: 0px; /* Khoảng cách giữa nút dropdown và các mục khác */
+}
+.navbar-collapse .nav-item .dropdown-togglefake {
+    margin: 0px; /* Khoảng cách giữa nút dropdown và các mục khác */
+}
+.dropdown-item {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Bắt đầu với gạch chân ẩn */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Hiệu ứng gạch chân */
+  }
+  
+  .dropdown-item:hover::after {
+    transform: scaleX(1); /* Hiển thị gạch chân khi hover */
+    transform-origin: bottom left; /* Tạo hiệu ứng trượt từ phải sang trái */
+  }
+  .dropdown-menu .col-4 {
+    position: relative; /* Để có thể đặt đường gạch dọc chính xác */
+  }
+  .dropdown-menu .col-5 {
+    position: relative; /* Để có thể đặt đường gạch dọc chính xác */
+  }
+  
+  .dropdown-menu .col-4:not(:last-child) {
+    border-right: 1px solid #333; /* Đường gạch dọc giữa các cột */
+  }
+  .dropdown-menu .col-5:not(:last-child) {
+    border-right: 1px solid #333; /* Đường gạch dọc giữa các cột */
+  }
+  
+/* Mặc định: không có border */
+.pagination li {
+    position: relative;
+    padding: 4px 12px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Khi hover vào mục */
+.pagination li:hover {
+    background-color: #c9572a;
+    border-color: #c9572a;
+    color: white;
+}
+
+/* Khi mục được chọn (active) */
+.pagination li.active {
+    background-color: #c9572a;
+    border-color: transparent; /* Không có border khi được chọn */
+    color: white;
+}
+
+/* Khi hover vào mục được chọn */
+.pagination li.active:hover {
+    border-color: transparent; /* Vẫn không có border khi hover */
+}
+
+/* Nút "Xem Thêm" */
+.pagination li .btn-readmore {
+    font-size: 12px;
+    padding: 3px 5px;
+    display: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+/* Định dạng nút "Xem Thêm" nằm bên phải */
+.col.align-items-end.text-end {
+    margin-top: 10px;
+}
+
+.btn-readmore {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 9px 30px;
+    color: white;
+    background-color: #030202;
+    border: solid white 1px;
+    transition: background-color 0.3s ease;
+}
